@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /root/horizon_highway_slam/build/devel/setup.sh

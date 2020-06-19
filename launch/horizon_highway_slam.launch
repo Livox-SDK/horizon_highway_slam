@@ -1,0 +1,21 @@
+<launch>
+
+    <arg name="IMU" default="2" />
+    <arg name="LidarID" default="0" />
+    <arg name="BagName" default="YouTube_highway_demo.bag" />
+    <rosparam param="Camera_Tlb"> [0.9999161, 0.0026676,  0.0126707, -0.05512,
+                                  -0.0025826, 0.9999741, -0.0067201, -0.02226,
+                                  -0.0126883, 0.0066868,  0.9998971,  0.0297 ,
+                                   0.0,       0.0,        0.0,        1.0    ]</rosparam>
+    <param name="ifIMU" type="int" value="$(arg IMU)" />
+    <param name="LidarToMapping" type="int" value="$(arg LidarID)" />
+
+    <node pkg="horizon_highway_slam" type="horizon_highway_odometry" name="horizon_highway_odometry" output="screen">
+        <remap from="/livox/hub" to="/livox/lidar"/>
+    </node>
+
+    <node pkg="horizon_highway_slam" type="horizon_highway_mapping" name="horizon_highway_mapping" output="screen"/>
+
+    <node pkg="rosbag" type="play" name="rosbag_play" output="screen" args="/root/shared_dir/$(arg BagName)"/>
+
+</launch>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<package>
+  <name>horizon_highway_slam</name>
+  <version>0.0.0</version>
+
+  <description>
+    horizon_highway_slam
+  </description>
+
+  <maintainer email="dev@livoxtech.com">livox</maintainer>
+
+  <license>BSD</license>
+
+  <author email="dev@livoxtech.com">livox</author>
+  
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>nav_msgs</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>tf</run_depend>
+
+  <test_depend>rostest</test_depend>
+  <test_depend>rosbag</test_depend>
+
+  <export>
+  </export>
+</package>
