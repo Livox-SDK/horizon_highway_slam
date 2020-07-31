@@ -1,7 +1,7 @@
 # Horizon Highway SLAM
 ## A highway SLAM Demo for Livox Horizon Lidar
 
-**horizon_highway_slam** is a robust, low drift, and real time highway SLAM package suitable for [*Livox Horizon liadr*](https://www.livoxtech.com/horizon), which is a high-performance LiDAR sensor built for Level 3 and Level 4 autonomous driving. This SLAM work can adapt to a wide speed range (0~80km/h), and address many key issues: feature extraction and selection in very limited FOV, motion distortion compensation, multi-sensor fusion to prevent scene degradation, etc. At the current stage, horizon_highway_slam is avaliable in the libarary form.
+**horizon_highway_slam** is a robust, low drift, and real time highway SLAM package suitable for the [*Livox Horizon lidar*](https://www.livoxtech.com/horizon), which is a high-performance LiDAR sensor built for Level 3 and Level 4 autonomous driving. This SLAM framework can adapt to a wide speed range (0~80km/h), and address many key issues: feature extraction and selection in very limited FOV, motion distortion compensation, multi-sensor fusion to prevent scene degradation, etc. At the current stage, horizon_highway_slam is only avaliable in the form of a precompiled binary library.
 
 **Developer:** [Livox](https://www.livoxtech.com)
 
